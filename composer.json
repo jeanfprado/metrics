@@ -1,0 +1,17 @@
+{
+    "name": "jeanfprado/metrics",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jeanfprado\\Metrics\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jean Prado",
+            "email": "jeanfprado@gmail.com"
+        }
+    ],
+    "require": {}
+}
