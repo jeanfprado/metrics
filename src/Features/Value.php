@@ -257,6 +257,7 @@ class Value extends Metric
 
     /**
      * Get a unique reference it's used to generate cache key
+     * Recommend be used a user public id.
      *
      * @return string
      */

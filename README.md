@@ -144,3 +144,38 @@ You also use a custom value.
 ```php
     return $this->result(Order::processed()->count());
 ```
+
+### Render the script
+
+You'll need to call the script() method contained in the metric to place the script tag. A full example is provided below.
+
+```php
+   {!! $chart->script() !!}
+```
+#### JS event and id
+
+Sample HTML and all js id necessary to create a metric.
+
+```html
+   <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Metric with API</title>
+        </head>
+        <body>
+            <div id="{{ $metric->id }}_load"></div>
+            <div id="{{ $metric->id }}_metric">
+                <div id="{{ $metric->id }}_value"></div>
+                <div id="{{ $metric->id }}_growth_percentage"></div>
+                <select id="{{ $metric->id }}_select">
+                    @foreach ($metric->ranges() as $range => $name)
+                        <option value="{{ $range }}">{{ $name }}</option>
+                    @endforeach
+                </select>
+            </div>
+            {!! $metric->script() !!}
+        </body>
+    </html>
+```
+
