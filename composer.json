@@ -1,6 +1,12 @@
 {
     "name": "jeanfprado/metrics",
+    "description": "API Metrics where you can create metrics using a API.",
+    "keywords": [
+        "metrics",
+        "laravel"
+    ],
     "type": "library",
+    "homepage": "https://github.com/jeanfprado/metrics",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -10,8 +16,13 @@
     "authors": [
         {
             "name": "Jean Prado",
-            "email": "jeanfprado@gmail.com"
+            "email": "jeanfprado@gmail.com",
+            "role": "Owner"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^7.3|^8.0|^8.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
